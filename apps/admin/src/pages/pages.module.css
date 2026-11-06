@@ -1,0 +1,272 @@
+/* Styles shared by the panel pages (A02–A09). */
+
+.stack {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+.kpiGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: var(--space-md);
+}
+
+.kpiCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-card);
+}
+
+.kpiHead {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.kpiValue {
+  margin-top: 10px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.kpiRule {
+  margin-top: 16px;
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--admin);
+}
+
+.sectionTitle {
+  font-size: 19px;
+  margin-bottom: var(--space-md);
+}
+
+.activityRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: 14px 0;
+  border-top: 1px solid var(--divider);
+  width: 100%;
+  background: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+  text-align: left;
+}
+
+.activityRow:first-of-type {
+  border-top: none;
+}
+
+.activityRow:hover {
+  background: var(--surface-muted);
+}
+
+.activityIcon {
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  display: grid;
+  place-items: center;
+}
+
+.activityText {
+  flex: 1;
+  min-width: 0;
+}
+
+.activityTitle {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.activityMeta {
+  margin-top: 2px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-lg);
+}
+
+.toolbarSpacer {
+  flex: 1;
+}
+
+.searchBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  min-width: 240px;
+}
+
+.searchBox input {
+  border: none;
+  outline: none;
+  background: none;
+  flex: 1;
+  min-width: 0;
+  font-size: 14px;
+}
+
+.highlight {
+  background: var(--admin-soft);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+
+.highlightTitle {
+  font-size: 19px;
+}
+
+.highlightBody {
+  margin-top: 8px;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.highlightActions {
+  margin-top: var(--space-md);
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.splitGrid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.formGrid {
+  display: grid;
+  gap: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.formActions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-top: var(--space-lg);
+}
+
+.detailList {
+  display: grid;
+  gap: 2px;
+  margin-top: var(--space-md);
+}
+
+.detailRow {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: 12px 0;
+  border-top: 1px solid var(--divider);
+  font-size: 14px;
+}
+
+.detailRow:first-of-type {
+  border-top: none;
+}
+
+.detailKey {
+  color: var(--text-secondary);
+}
+
+.detailValue {
+  font-weight: 600;
+  text-align: right;
+}
+
+.layerLegend {
+  display: flex;
+  gap: var(--space-xl);
+  flex-wrap: wrap;
+  margin-top: var(--space-md);
+}
+
+.layerItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.muted {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.mutedSmall {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin-top: var(--space-md);
+}
+
+.errorPanel {
+  background: var(--danger-surface);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+}
+
+.errorTitle {
+  margin-top: var(--space-md);
+  color: var(--danger);
+  font-size: 26px;
+}
+
+.errorBody {
+  margin-top: 10px;
+  color: var(--text-primary);
+  font-size: 15px;
+}
+
+.errorAction {
+  margin-top: var(--space-lg);
+}
+
+.errorHelp {
+  margin-top: var(--space-md);
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.inlineActions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.pageActions {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .splitGrid {
+    grid-template-columns: 1fr;
+  }
+}

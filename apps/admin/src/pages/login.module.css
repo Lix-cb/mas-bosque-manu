@@ -1,0 +1,146 @@
+/* A01 · Admin sign in. */
+
+.page {
+  min-height: 100vh;
+  background: var(--admin-sidebar);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: var(--space-xxl);
+  padding: var(--space-xxl);
+}
+
+.intro {
+  max-width: 420px;
+  justify-self: end;
+  color: var(--text-on-dark);
+}
+
+.mark {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-lg);
+  background: var(--admin);
+  display: grid;
+  place-items: center;
+}
+
+.title {
+  margin-top: var(--space-xl);
+  font-size: 38px;
+  color: var(--text-on-dark);
+  line-height: 1.1;
+}
+
+.subtitle {
+  margin-top: var(--space-md);
+  font-size: 22px;
+  font-weight: 700;
+  color: #b9a3e8;
+}
+
+.lead {
+  margin-top: var(--space-md);
+  font-size: 16px;
+  color: var(--text-on-dark-muted);
+}
+
+.restricted {
+  margin-top: var(--space-xl);
+  display: inline-flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  background: var(--admin-sidebar-hover);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  color: var(--text-on-dark);
+}
+
+.restrictedLabel {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+}
+
+.formCard {
+  justify-self: start;
+  width: 100%;
+  max-width: 460px;
+  background: var(--surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+
+.formTitle {
+  font-size: 30px;
+}
+
+.formLead {
+  margin-top: var(--space-sm);
+  color: var(--text-secondary);
+}
+
+.fields {
+  margin-top: var(--space-lg);
+  display: grid;
+  gap: var(--space-md);
+}
+
+.fieldShell {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+}
+
+.fieldShell:focus-within {
+  border-color: var(--admin);
+}
+
+.fieldLabel {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-heading);
+}
+
+.fieldInput {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  margin-top: 4px;
+  font-size: 15px;
+  color: var(--text-secondary);
+}
+
+.submit {
+  margin-top: var(--space-lg);
+}
+
+.help {
+  margin-top: var(--space-md);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.demoNote {
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 1024px) {
+  .page {
+    grid-template-columns: 1fr;
+    padding: var(--space-xl) var(--space-lg);
+    align-content: center;
+  }
+
+  .intro,
+  .formCard {
+    justify-self: stretch;
+    max-width: none;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+}
